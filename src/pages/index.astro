@@ -1,0 +1,46 @@
+---
+import Layout from "../layouts/Layout.astro"
+import MailchimpForm from "../components/MailchimpForm.astro"
+---
+
+<Layout>
+  <section class="wrapper">
+		<div class="content">
+			<p class="opening">Opening Summer 2025</p>
+			<img class="logo" src="/images/chrysanthemum-logo.svg" alt="Chrysanthemum - Upcycled & Uncommon Goods" />
+			<p class="subheading">Upcycled & Uncommon Goods</p>
+			<MailchimpForm />
+		</div>
+	</section>
+</Layout>
+
+<style lang="scss">
+  .wrapper {
+    background: #ef9575 url('/images/background.webp') no-repeat center center fixed;
+		background-size: cover;
+    width: 100%;
+    height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+  }
+	.content {
+		flex: 1;
+		padding: 30px;
+		width: 100%;
+		max-width: 900px;
+		.opening, .subheading {
+			text-align: center;
+			text-transform: uppercase;
+			letter-spacing: 0.15em;
+			font-size: 1.6rem;
+			margin: 20px 0;
+		}
+	}
+	.logo {
+		width: 100%;
+		height: auto;
+		margin: 0 auto;
+		display: block;
+	}
+</style>
