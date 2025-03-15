@@ -6,18 +6,20 @@ import MailchimpForm from "../components/MailchimpForm.astro"
 <Layout>
   <section class="wrapper">
 		<div class="content">
-			<p class="opening">Opening Summer 2025</p>
+			<p class="opening"><span>Opening Summer 2025</span><span class="hide-mobile">&nbsp;&bull;&nbsp;</span><span>East Village Detroit</span></p>
 			<img class="logo" src="/images/chrysanthemum-logo.svg" alt="Chrysanthemum - Upcycled & Uncommon Goods" />
 			<p class="subheading">Upcycled & Uncommon Goods</p>
 			<MailchimpForm />
+			<div class="social-footer">
+				<a class="social-icon" href="https://www.instagram.com/chrysanthemumdetroit" target="_blank" rel="noopener noreferrer" aria-label="Chrysanthemum on Instagram"><img src="/images/instagram-icon.svg" alt="Instagram" /></a>
+			</div>
 		</div>
 	</section>
 </Layout>
 
 <style lang="scss">
   .wrapper {
-    background: #ef9575 url('/images/background-shop.webp') no-repeat center center;
-		background-size: cover;
+    background: #c0ba7e;
     width: 100vw;
     min-height: 100vh;
 		display: flex;
@@ -32,11 +34,36 @@ import MailchimpForm from "../components/MailchimpForm.astro"
 			text-align: center;
 			text-transform: uppercase;
 			letter-spacing: 0.1em;
-			font-size: 1.2rem;
+			font-size: 1rem;
 			margin: 20px 0;
+			.hide-mobile {
+				display: none;
+			}
+			span{
+				display: block;
+			}
 			@media (min-width: 600px) {
 				letter-spacing: 0.15em;
 				font-size: 1.6rem;
+				.hide-mobile {
+					display: inline;
+				}
+				span{
+					display: inline;
+				}
+			}
+		}
+	}
+	.social-footer {
+		text-align: center;
+		margin-top: 20px;
+		.social-icon {
+			display: inline-block;
+			margin: 0 10px;
+			padding: 10px;
+			img {
+				width: 30px;
+				height: auto;
 			}
 		}
 	}

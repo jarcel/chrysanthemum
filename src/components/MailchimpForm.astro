@@ -97,8 +97,11 @@
       background: transparent;
       max-width: 400px;
       clear: left;
-      margin: 60px auto 30px;
+      margin: 30px auto;
       text-align: center;
+      @media (min-width: 600px) {
+        margin: 60px auto 30px;
+      }
       h2 {
         color: #231f20;
         font-size: 1.3rem;
@@ -169,7 +172,7 @@
       }
       .button {
         background: #231f20;
-        color: #ef9575;
+        color: #c0ba7e;
         border: 2px solid transparent;
         padding: 10px 20px;
         margin: 20px 0;
@@ -179,7 +182,7 @@
         cursor: pointer;
         transition: background 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
         &:hover {
-          background: #ef9575;
+          background: #c0ba7e;
           color: #231f20;
           border: 2px solid #231f20;
         }
