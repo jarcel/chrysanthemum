@@ -16,10 +16,10 @@ import MailchimpForm from "../components/MailchimpForm.astro"
 
 <style lang="scss">
   .wrapper {
-    background: #ef9575 url('/images/background.webp') no-repeat center center fixed;
+    background: #ef9575 url('/images/background.webp') no-repeat center center;
 		background-size: cover;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    min-height: 100vh;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -27,14 +27,17 @@ import MailchimpForm from "../components/MailchimpForm.astro"
 	.content {
 		flex: 1;
 		padding: 30px;
-		width: 100%;
-		max-width: 900px;
+		width: 100vw;
 		.opening, .subheading {
 			text-align: center;
 			text-transform: uppercase;
-			letter-spacing: 0.15em;
-			font-size: 1.6rem;
+			letter-spacing: 0.1em;
+			font-size: 1.2rem;
 			margin: 20px 0;
+			@media (min-width: 600px) {
+				letter-spacing: 0.15em;
+				font-size: 1.6rem;
+			}
 		}
 	}
 	.logo {
