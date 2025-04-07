@@ -1,47 +1,67 @@
 ---
 import "../styles/reset.scss"
 ---
+
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="stylesheet" href="https://use.typekit.net/yhc3gji.css">
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="stylesheet" href="https://use.typekit.net/yhc3gji.css" />
     <meta name="generator" content={Astro.generator} />
-		<meta name="keywords" content="upcycled goods, vintage clothing, uncommon finds, sustainable decor, vinyl records, handmade textiles, artisanal perfumes, eco-friendly furniture, detroit stores" />
-  	<meta name="author" content="Chrysanthemum" />
-  	<meta name="robots" content="index, follow" />
+    <meta
+      name="keywords"
+      content="upcycled goods, vintage clothing, uncommon finds, sustainable decor, vinyl records, handmade textiles, artisanal perfumes, eco-friendly furniture, detroit stores"
+    />
+    <meta name="author" content="Chrysanthemum" />
+    <meta name="robots" content="index, follow" />
     <title>Chrysanthemum - Upcycled & Uncommon Goods - Detroit, Michigan</title>
-		<script type="application/ld+json">
-			{
-				"@context": "https://schema.org",
-				"@type": "Store",
-				"name": "Chrysanthemum",
-				"url": "https://shopchrysanthemum.com",
-				"description": "A curated collection of upcycled and uncommon goods, including vintage clothing, housewares, vinyl records, textiles, pottery, incense, perfumes, and furniture.",
-				"image": "https://shopchrysanthemum.com/images/chrysanthemum-og-image.png",
-				"address": {
-					"@type": "PostalAddress",
-					"streetAddress": "10103 Kercheval Ave",
-					"addressLocality": "Detroit",
-					"addressRegion": "MI",
-					"postalCode": "48214",
-					"addressCountry": "USA"
-				},
-				"sameAs": [
-					"https://www.instagram.com/chrysanthemumdetroit",
-					"https://www.etsy.com/shop/chrysanthemumdetroit",
-					"https://www.chrysanthemumdetroit.com/"
-				]
-			}
-		</script>
-		<meta name="description" content="Chrysanthemum - Upcycled & Uncommon Goods - Detroit, Michigan" />
-		<meta property="og:title" content="Chrysanthemum - Upcycled & Uncommon Goods" />
-		<meta property="og:description" content="Handpicked vintage clothing, housewares, records, textiles, and more. Unique and sustainable treasures await." />
-		<meta property="og:image" content="https://shopchrysanthemum.com/images/chrysanthemum-og-image.png" />
-		<meta property="og:url" content="https://shopchysanthemum.com" />
-		<meta property="og:type" content="website" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Store",
+        "name": "Chrysanthemum",
+        "url": "https://shopchrysanthemum.com",
+        "description": "A curated collection of upcycled and uncommon goods, including vintage clothing, housewares, vinyl records, textiles, pottery, incense, perfumes, and furniture.",
+        "image": "https://shopchrysanthemum.com/images/chrysanthemum-og-image.png",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "10103 Kercheval Ave",
+          "addressLocality": "Detroit",
+          "addressRegion": "MI",
+          "postalCode": "48214",
+          "addressCountry": "USA"
+        },
+        "sameAs": [
+          "https://www.instagram.com/chrysanthemumdetroit",
+          "https://www.etsy.com/shop/chrysanthemumdetroit",
+          "https://www.chrysanthemumdetroit.com/"
+        ]
+      }
+    </script>
+    <meta
+      name="description"
+      content="Chrysanthemum - Upcycled & Uncommon Goods - Detroit, Michigan"
+    />
+    <meta
+      property="og:title"
+      content="Chrysanthemum - Upcycled & Uncommon Goods"
+    />
+    <meta
+      property="og:description"
+      content="Handpicked vintage clothing, housewares, records, textiles, and more. Unique and sustainable treasures await."
+    />
+    <meta
+      property="og:image"
+      content="https://shopchrysanthemum.com/images/chrysanthemum-og-image.png"
+    />
+    <meta property="og:url" content="https://shopchysanthemum.com" />
+    <meta property="og:type" content="website" />
   </head>
   <body>
     <slot />
@@ -55,12 +75,12 @@ import "../styles/reset.scss"
     margin: 0;
     width: 100%;
     height: 100%;
-		box-sizing: border-box;
-		color: #231f20;
-		font-size: 16px;
-		font-family: "gill-sans-nova", sans-serif;
-		font-weight: 400;
-		font-style: normal;
-		overflow: hidden;
+    box-sizing: border-box;
+    color: #231f20;
+    font-size: 16px;
+    font-family: "gill-sans-nova", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    overflow: hidden;
   }
 </style>
